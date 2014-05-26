@@ -1,3 +1,5 @@
+" Set shell for external commands
+set shell=zsh
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
