@@ -55,7 +55,8 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# Fix issues compiling gems which use unrecongized CLI args (e.g. fails when building w/ Xcode CLI 5.1)
+export ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future bundle install"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
