@@ -57,3 +57,11 @@ Desktop.ini
 
 # NPM
 .npmignore
+**/node_modules
+
+# Intellij
+*.iml
+**/.idea
+
+# Bower
+**/bower_components

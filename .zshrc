@@ -56,9 +56,12 @@ export EDITOR='vim'
 
 # Compilation flags
 # Fix issues compiling gems which use unrecongized CLI args (e.g. fails when building w/ Xcode CLI 5.1)
-export ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future bundle install"
+export ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Export DOCKER_HOST address which is used by docker-vagrant
+export DOCKER_HOST=192.168.33.10:2375
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
