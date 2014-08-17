@@ -65,3 +65,9 @@ Desktop.ini
 
 # Bower
 **/bower_components
+
+# Vim
+*.swp
+
+# Clojure/Lein
+.lein-repl-history
