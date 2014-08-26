@@ -71,3 +71,4 @@ Desktop.ini
 
 # Clojure/Lein
 .lein-repl-history
+.nrepl-port

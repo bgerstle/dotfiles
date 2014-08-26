@@ -1,3 +1,4 @@
+colorscheme zenburn
 " Set shell for external commands
 set shell=zsh
 " Make Vim more useful

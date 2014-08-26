@@ -62,6 +62,6 @@ export ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future"
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Export DOCKER_HOST address which is used by docker-vagrant
-export DOCKER_HOST=192.168.33.10:2375
+export DOCKER_HOST=tcp://192.168.59.103:2375
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
