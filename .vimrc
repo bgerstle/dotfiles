@@ -1,3 +1,8 @@
+execute pathogen#infect()
+
+" Enable file type and indent detection
+filetype plugin indent on
+
 colorscheme zenburn
 " Set shell for external commands
 set shell=zsh
@@ -78,16 +83,15 @@ noremap <leader>ss :call StripWhitespace()<CR>
 " Save a file as root (,W)
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
-" Automatic commands
-if has("autocmd")
-  " Enable file type detection
-  filetype on
-  " Treat .json files as .js
-  autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-  autocmd BufNewFile,BufRead Gruntfile set filetype=js syntax=javascript
-  autocmd BufNewFile,BufRead *.podspec set filetype=ruby syntax=ruby
-  autocmd BufNewFile,BufRead Podfile set filetype=ruby syntax=ruby
-  autocmd BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
-endif
+" Configure browser for haskell_doc.vim
+ let g:haddock_browser = "open"
+ let g:haddock_browser_callformat = "%s %s"
 
-execute pathogen#infect()
+autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+autocmd BufNewFile,BufRead Gruntfile set filetype=js syntax=javascript
+autocmd BufNewFile,BufRead *.podspec set filetype=ruby syntax=ruby
+autocmd BufNewFile,BufRead Podfile set filetype=ruby syntax=ruby
+autocmd BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
+" use ghc functionality for haskell files
+au Bufenter *.hs compiler ghc
+
