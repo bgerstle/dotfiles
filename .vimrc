@@ -84,8 +84,8 @@ noremap <leader>ss :call StripWhitespace()<CR>
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
 " Configure browser for haskell_doc.vim
- let g:haddock_browser = "open"
- let g:haddock_browser_callformat = "%s %s"
+let g:haddock_browser = "open"
+let g:haddock_browser_callformat = "%s %s"
 
 autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 autocmd BufNewFile,BufRead Gruntfile set filetype=js syntax=javascript
