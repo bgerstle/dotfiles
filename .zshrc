@@ -44,7 +44,7 @@ ZSH_THEME="crunch"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx brew git-extras git virtualenvwrapper)
+plugins=(osx brew git-extras git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -60,13 +60,8 @@ export ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Export DOCKER_HOST address which is used by docker-vagrant
-export DOCKER_HOST=tcp://192.168.59.103:2375
-
-# Export DOCKER_HOST, DOCKER_HOST_ADDRESS, and HELIOS_URI
-if [[ -x `which helios-env` ]]; then; eval `helios-env`; fi
-
 # Setup `spm` alias
 alias spm="npm -reg http://npm-registry.spotify.net -userconfig ~/.spmrc --always-auth=true"
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
