@@ -19,3 +19,18 @@
 [submodule ".vim/bundle/vim-clojure-static"]
 	path = .vim/bundle/vim-clojure-static
 	url = git@github.com:guns/vim-clojure-static.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/vim-tagbar"]
+	path = .vim/bundle/vim-tagbar
+	url = git@github.com:majutsushi/tagbar
+[submodule ".vim/bundle/vim-command-t"]
+	path = .vim/bundle/vim-command-t
+	url = git@github.com:wincent/command-t.git
+[submodule ".vim/bundle/vim-misc"]
+	path = .vim/bundle/vim-misc
+	url = git@github.com:xolox/vim-misc.git
+[submodule ".vim/bundle/vim-easytags"]
+	path = .vim/bundle/vim-easytags
+	url = git@github.com:xolox/vim-easytags.git

@@ -3,7 +3,7 @@ execute pathogen#infect()
 " Enable file type and indent detection
 filetype plugin indent on
 
-colorscheme zenburn
+colorscheme tomorrow-night
 " Set shell for external commands
 set shell=zsh
 " Make Vim more useful
@@ -87,6 +87,11 @@ noremap <leader>W :w !sudo tee % > /dev/null<CR>
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
 
+" Close vim if NERDTree is the only thing open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+map <C-\> :NERDTreeToggle<CR>
+
 autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 autocmd BufNewFile,BufRead Gruntfile set filetype=js syntax=javascript
 autocmd BufNewFile,BufRead *.podspec set filetype=ruby syntax=ruby
@@ -95,3 +100,6 @@ autocmd BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
 " use ghc functionality for haskell files
 au Bufenter *.hs compiler ghc
 
+" Use local/dynamic vimtags
+:set tags=./tags;
+:let g:easytags_dynamic_files = 1
