@@ -68,6 +68,7 @@ Desktop.ini
 
 # Vim
 *.swp
+.vimtags
 
 # Clojure/Lein
 .lein-repl-history

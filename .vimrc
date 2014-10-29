@@ -1,5 +1,7 @@
 execute pathogen#infect()
 
+runtime! plugin/sensible.vim
+
 " Enable file type and indent detection
 filetype plugin indent on
 
@@ -101,5 +103,5 @@ autocmd BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
 au Bufenter *.hs compiler ghc
 
 " Use local/dynamic vimtags
-:set tags=./tags;
-:let g:easytags_dynamic_files = 1
+:set tags=./.vimtags;
+:let g:easytags_dynamic_files = 2
