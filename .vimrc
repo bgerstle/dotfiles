@@ -6,6 +6,10 @@ runtime! plugin/sensible.vim
 filetype plugin indent on
 
 colorscheme tomorrow-night
+
+set encoding=utf-8
+set guifont=InputMonoNarrow
+
 " Set shell for external commands
 set shell=zsh
 " Make Vim more useful
@@ -103,5 +107,9 @@ autocmd BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
 au Bufenter *.hs compiler ghc
 
 " Use local/dynamic vimtags
-:set tags=./.vimtags;
-:let g:easytags_dynamic_files = 2
+set tags=./.vimtags;
+let g:easytags_dynamic_files = 2
+
+" Airline config
+let g:airline_theme='tomorrow'
+let g:airline_powerline_fonts = 1
