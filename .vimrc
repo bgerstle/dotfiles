@@ -98,11 +98,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 map <C-\> :NERDTreeToggle<CR>
 
-autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+autocmd BufNewFile,BufRead *.json setfiletype=json syntax=javascript
 autocmd BufNewFile,BufRead Gruntfile set filetype=js syntax=javascript
 autocmd BufNewFile,BufRead *.podspec set filetype=ruby syntax=ruby
 autocmd BufNewFile,BufRead Podfile set filetype=ruby syntax=ruby
-autocmd BufNewFile,BufRead *.pp set filetype=ruby syntax=ruby
 " use ghc functionality for haskell files
 au Bufenter *.hs compiler ghc
 
