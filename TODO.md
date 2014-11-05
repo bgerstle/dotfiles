@@ -1,0 +1,1 @@
+- Add bootstrap script to install links and build vim plugins
