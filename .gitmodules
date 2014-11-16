@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vim-puppet"]
 	path = .vim/bundle/vim-puppet
 	url = git@github.com:rodjek/vim-puppet.git
+[submodule ".vim/bundle/vim-nerdtree"]
+	path = .vim/bundle/vim-nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
