@@ -8,7 +8,6 @@ filetype plugin indent on
 colorscheme tomorrow-night
 
 set encoding=utf-8
-set guifont=InputMonoNarrow
 
 " Set shell for external commands
 set shell=zsh
