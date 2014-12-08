@@ -49,6 +49,3 @@
 [submodule ".vim/bundle/vim-polyglot"]
 	path = .vim/bundle/vim-polyglot
 	url = git@github.com:sheerun/vim-polyglot.git
-[submodule ".vim/bundle/vim-ycm"]
-	path = .vim/bundle/vim-ycm
-	url = git@github.com:Valloric/YouCompleteMe.git
