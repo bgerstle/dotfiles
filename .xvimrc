@@ -51,14 +51,14 @@ set expandtab
 " Make tabs as wide as two spaces
 set tabstop=2
 " Show “invisible” characters
-" set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 " set list
 " Highlight searches
 " set hlsearch
 " Ignore case of searches
 " set ignorecase
 " Enable mouse in all modes
-" set mouse=a
+set mouse=a
 " Disable error bells
 " set noerrorbells
 " Don’t reset cursor to start of line when moving around.
@@ -83,9 +83,9 @@ set tabstop=2
 "   call setpos('.', save_cursor)
 "   call setreg('/', old_query)
 " endfunction
-" noremap <leader>ss :call StripWhitespace()<CR>
+noremap <leader>ss :call StripWhitespace()<CR>
 " Save a file as root (,W)
-" noremap <leader>W :w !sudo tee % > /dev/null<CR>
+noremap <leader>W :w !sudo tee % > /dev/null<CR>
 "
 " Configure browser for haskell_doc.vim
 " let g:haddock_browser = "open"
@@ -108,5 +108,5 @@ set tabstop=2
 " let g:easytags_dynamic_files = 2
 "
 " Airline config
-let g:airline_theme='tomorrow'
-let g:airline_powerline_fonts = 1
+" let g:airline_theme='tomorrow'
+" let g:airline_powerline_fonts = 1
