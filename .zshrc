@@ -1,5 +1,3 @@
-ZSH=$HOME/.oh-my-zsh
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -59,9 +57,6 @@ export ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Setup `spm` alias
-alias spm="npm -reg http://npm-registry.spotify.net -userconfig ~/.spmrc --always-auth=true"
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
