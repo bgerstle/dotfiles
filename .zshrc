@@ -1,3 +1,5 @@
+ZSH=~/.oh-my-zsh
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -44,7 +46,7 @@ ZSH_THEME="crunch"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(osx brew git-extras git)
 
-source $ZSH/oh-my-zsh.sh
+source "${ZSH}/oh-my-zsh.sh"
 
 # User configuration
 
