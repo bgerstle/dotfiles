@@ -1560,7 +1560,7 @@
 	<key>NSFontPanelPreviewHeight</key>
 	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Code/dotrcfiles</string>
+	<string>~/Documents</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1589,7 +1589,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>356 142 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 376 1276 401 0 0 1280 777 </string>
+	<string>10 276 1270 423 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>4 355 650 498 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -3113,7 +3113,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/briangerstle/Code/dotrcfiles</string>
+	<string>~/Code/dotfiles</string>
 	<key>PromptOnClose</key>
 	<false/>
 	<key>PromptOnQuit</key>
@@ -3133,7 +3133,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-12-01T21:50:32Z</date>
+	<date>2015-01-28T17:28:27Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -3183,6 +3183,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0</string>
+	<string>2.0.0.20141103</string>
 </dict>
 </plist>
