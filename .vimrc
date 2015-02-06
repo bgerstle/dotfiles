@@ -57,7 +57,7 @@ set list
 " Highlight searches
 set hlsearch
 " Ignore case of searches
-set ignorecase
+set noignorecase
 " Enable mouse in all modes
 set mouse=a
 " Disable error bells
@@ -105,8 +105,9 @@ autocmd BufNewFile,BufRead Podfile set filetype=ruby syntax=ruby
 au Bufenter *.hs compiler ghc
 
 " Use local/dynamic vimtags
-set tags=./.vimtags;
-let g:easytags_dynamic_files = 2
+" set tags=./.vimtags;
+" let g:easytags_dynamic_files = 2
+let g:easytags_include_members = 1
 
 " Airline config
 let g:airline_theme='tomorrow'
