@@ -97,17 +97,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 map <C-\> :NERDTreeToggle<CR>
 
-autocmd BufNewFile,BufRead *.json setfiletype=json syntax=javascript
-autocmd BufNewFile,BufRead Gruntfile set filetype=js syntax=javascript
-autocmd BufNewFile,BufRead *.podspec set filetype=ruby syntax=ruby
-autocmd BufNewFile,BufRead Podfile set filetype=ruby syntax=ruby
-" use ghc functionality for haskell files
-au Bufenter *.hs compiler ghc
+autocmd BufNewFile,BufRead *.mm set filetype=objcpp
 
 " Use local/dynamic vimtags
-" set tags=./.vimtags;
-" let g:easytags_dynamic_files = 2
-let g:easytags_include_members = 1
+set tags=.vimtags,;~/.vimtags
+let g:easytags_dynamic_files = 2
 
 " Airline config
 let g:airline_theme='tomorrow'
