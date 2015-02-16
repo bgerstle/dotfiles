@@ -56,7 +56,7 @@ set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 " Highlight searches
 " set hlsearch
 " Ignore case of searches
-" set ignorecase
+set noignorecase
 " Enable mouse in all modes
 set mouse=a
 " Disable error bells
