@@ -92,6 +92,8 @@ noremap <leader>W :w !sudo tee % > /dev/null<CR>
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
 
+let g:tagbar_ctag_bin = "/opt/boxen/homebrew/bin/ctags"
+
 " Close vim if NERDTree is the only thing open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 

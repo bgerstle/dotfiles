@@ -1,1 +1,3 @@
 - Add bootstrap script to install links and build vim plugins
+  - Run `make` in Command-T
+  - Exec `:call pathogen#helptags()` inside vim to generate help docs

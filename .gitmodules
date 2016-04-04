@@ -58,3 +58,9 @@
 [submodule ".vim/bundle/vim-tomorrow-theme"]
 	path = .vim/bundle/vim-tomorrow-theme
 	url = git@github.com:chriskempson/vim-tomorrow-theme.git
+[submodule ".vim/bundle/vim-github-colorscheme"]
+	path = .vim/bundle/vim-github-colorscheme
+	url = https://github.com/endel/vim-github-colorscheme.git
+[submodule ".vim/bundle/vim-node"]
+	path = .vim/bundle/vim-node
+	url = https://github.com/moll/vim-node.git
