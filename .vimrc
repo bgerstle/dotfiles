@@ -101,6 +101,9 @@ map <C-\> :NERDTreeToggle<CR>
 
 autocmd BufNewFile,BufRead *.mm set filetype=objcpp
 
+" Ruby config files
+autocmd BufNewFile,BufRead {Gem,Fast,Match,App,Deliver,Pod}file set filetype=ruby
+
 " Use local/dynamic vimtags
 set tags=.vimtags,;~/.vimtags
 let g:easytags_dynamic_files = 2
