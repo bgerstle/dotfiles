@@ -64,3 +64,6 @@
 [submodule ".vim/bundle/vim-node"]
 	path = .vim/bundle/vim-node
 	url = https://github.com/moll/vim-node.git
+[submodule ".vim/bundle/vim-logstash"]
+	path = .vim/bundle/vim-logstash
+	url = https://github.com/robbles/logstash.vim
