@@ -67,3 +67,6 @@
 [submodule ".vim/bundle/vim-logstash"]
 	path = .vim/bundle/vim-logstash
 	url = https://github.com/robbles/logstash.vim
+[submodule ".vim/bundle/vim-test"]
+	path = .vim/bundle/vim-test
+	url = https://github.com/janko-m/vim-test

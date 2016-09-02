@@ -101,6 +101,19 @@ map <C-\> :NERDTreeToggle<CR>
 
 autocmd BufNewFile,BufRead *.mm set filetype=objcpp
 
+" Syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" JS syntastic checkers
+let g:syntastic_javascript_checkers = ['eslint', 'jshint']
+
 " Ruby config files
 autocmd BufNewFile,BufRead {Gem,Fast,Match,App,Deliver,Pod}file set filetype=ruby
 autocmd BufNewFile,BufRead podspec set filetype=ruby
@@ -113,3 +126,7 @@ let g:easytags_dynamic_files = 2
 " Airline config
 let g:airline_theme='tomorrow'
 let g:airline_powerline_fonts = 1
+
+" Ignore paths for CommandT
+let g:CommandTWildIgnore='*/node_modules,*/.bundle,*/build,*/.meteor'
+
