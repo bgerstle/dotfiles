@@ -60,5 +60,10 @@ export ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# Timing terminal window tracking support
+# TODO: put into boxen recipe for Timing
+PROMPT_TITLE='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
+export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
+
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
