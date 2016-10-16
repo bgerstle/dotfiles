@@ -1808,9 +1808,9 @@
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
 	<string>970 932 616 174 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>331 130 796 473 0 0 2560 1417 </string>
+	<string>121 85 796 473 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 919 2554 498 0 0 2560 1417 </string>
+	<string>0 1 2554 1416 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -4016,8 +4016,6 @@
 			<string>~/Code</string>
 		</dict>
 	</array>
-	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
-	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>1</integer>
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
@@ -4050,6 +4048,8 @@
 	<false/>
 	<key>PasteFromClipboard</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -4108,7 +4108,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-08-23T14:03:01Z</date>
+	<date>2016-09-21T21:32:09Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -4158,6 +4158,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.5</string>
+	<string>3.0.9</string>
 </dict>
 </plist>

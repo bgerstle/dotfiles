@@ -67,3 +67,7 @@ export PROMPT_COMMAND="${PROMPT_COMMAND} ${PROMPT_TITLE}; "
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
+# HAX: manually add stuff to path for android
+# TODO: boxenize this
+export PATH=$PATH:~/Library/Android/sdk/platform-tools
+
