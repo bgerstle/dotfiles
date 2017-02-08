@@ -130,3 +130,7 @@ let g:airline_powerline_fonts = 1
 " Ignore paths for CommandT
 let g:CommandTWildIgnore='*/node_modules,*/.bundle,*/build,*/.meteor'
 
+" Skip these dirs when grepping
+:let Grep_Skip_Dirs = '.meteor dump .build.* .build *node_modules* .git'
+
+

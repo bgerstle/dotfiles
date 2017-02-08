@@ -70,3 +70,6 @@
 [submodule ".vim/bundle/vim-test"]
 	path = .vim/bundle/vim-test
 	url = https://github.com/janko-m/vim-test
+[submodule ".vim/bundle/vim-session"]
+	path = .vim/bundle/vim-session
+	url = https://github.com/xolox/vim-session

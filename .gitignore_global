@@ -67,7 +67,7 @@ Desktop.ini
 **/bower_components
 
 # Vim
-*.swp
+*.sw[n-p]
 .vimtags
 
 # Clojure/Lein
