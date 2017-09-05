@@ -36,7 +36,7 @@ ZSH_THEME="crunch"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment following line if you want to  shown in the command execution time stamp 
+# Uncomment following line if you want to  shown in the command execution time stamp
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
@@ -56,6 +56,9 @@ export EDITOR='vim'
 # Compilation flags
 # Fix issues compiling gems which use unrecongized CLI args (e.g. fails when building w/ Xcode CLI 5.1)
 # export ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future"
+
+# Grep flags
+export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=.meteor --exclude=*.sw*'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"

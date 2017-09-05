@@ -119,6 +119,12 @@ autocmd BufNewFile,BufRead {Gem,Fast,Match,App,Deliver,Pod}file set filetype=rub
 autocmd BufNewFile,BufRead podspec set filetype=ruby
 autocmd BufNewFile,BufRead erb set filetype=ruby
 
+" Packer JSON templates
+autocmd BufNewFile,BufRead packer set filetype=json
+
+" Ansible inventory
+autocmd BufNewFile,BufRead inventory set filetype=dosini
+
 " Use local/dynamic vimtags
 set tags=.vimtags,;~/.vimtags
 let g:easytags_dynamic_files = 2
@@ -133,4 +139,5 @@ let g:CommandTWildIgnore='*/node_modules,*/.bundle,*/build,*/.meteor'
 " Skip these dirs when grepping
 :let Grep_Skip_Dirs = '.meteor dump .build.* .build *node_modules* .git'
 
-
+" Disable session autosave
+:let g:session_autosave = 'no'
