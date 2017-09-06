@@ -7,6 +7,9 @@ filetype plugin indent on
 
 colorscheme tomorrow-night
 
+" For Command-T
+set switchbuf=usetab
+
 set encoding=utf-8
 
 " Set shell for external commands
