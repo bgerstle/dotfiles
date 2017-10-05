@@ -1815,15 +1815,15 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1438 557 445 100 0 0 2560 1417 </string>
+	<string>1438 446 445 77 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>755 785 606 456 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
-	<string>410 527 616 174 0 0 1440 877 </string>
+	<string>970 932 616 174 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1230 936 796 473 0 0 2560 1417 </string>
+	<string>1230 768 796 473 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 701 2538 716 0 0 2560 1417 </string>
+	<string>0 391 1365 486 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -3213,11 +3213,11 @@
 			<key>Name</key>
 			<string>BGerstle</string>
 			<key>Non Ascii Font</key>
-			<string>SauceCodePowerline-Regular 13</string>
+			<string>SauceCodePowerline-Light 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SauceCodePowerline-Regular 13</string>
+			<string>SauceCodePowerline-Light 13</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -3376,36 +3376,6 @@
 			<array>
 				<dict>
 					<key>action</key>
-					<string>GrowlTrigger</string>
-					<key>parameter</key>
-					<string>Ansible couldn't reach hosts! ❌</string>
-					<key>partial</key>
-					<true/>
-					<key>regex</key>
-					<string>ok=\d+ *changed=\d+ *unreachable=[^0]+ failed=\d+ *$</string>
-				</dict>
-				<dict>
-					<key>action</key>
-					<string>GrowlTrigger</string>
-					<key>parameter</key>
-					<string>Ansible play succeeded! ✅</string>
-					<key>partial</key>
-					<true/>
-					<key>regex</key>
-					<string>ok=\d+ *changed=\d+ *unreachable=0 *failed=0 *$</string>
-				</dict>
-				<dict>
-					<key>action</key>
-					<string>GrowlTrigger</string>
-					<key>parameter</key>
-					<string>Ansible play failed! ❌</string>
-					<key>partial</key>
-					<true/>
-					<key>regex</key>
-					<string>ok=\d+ *changed=\d+ *unreachable=\d+ failed=[^0]+ *</string>
-				</dict>
-				<dict>
-					<key>action</key>
 					<string>BounceTrigger</string>
 					<key>parameter</key>
 					<integer>0</integer>
@@ -3433,6 +3403,24 @@
 					<true/>
 					<key>regex</key>
 					<string>fastlane finished with errors</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>GrowlTrigger</string>
+					<key>parameter</key>
+					<string>Ansible play finished!</string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>PLAY RECAP \**</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>BellTrigger</string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>PLAY RECAP \**</string>
 				</dict>
 			</array>
 			<key>Unlimited Scrollback</key>
@@ -4195,6 +4183,8 @@
 	<true/>
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
 	<integer>1</integer>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
@@ -4287,7 +4277,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-08-21T22:03:45Z</date>
+	<date>2017-09-18T15:03:21Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
