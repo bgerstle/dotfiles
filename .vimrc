@@ -150,3 +150,6 @@ let g:rustfmt_autosave = 1
 " Workaround for https://github.com/rust-lang/rust.vim/issues/118
 let g:syntastic_rust_checkers = ['cargo']
 
+let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_switch_buffer = 'etvh'
+
