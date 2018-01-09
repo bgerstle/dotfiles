@@ -58,7 +58,7 @@ export EDITOR='vim'
 # export ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future"
 
 # Grep flags
-export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=.meteor --exclude=*.sw* --exclude-dir=bundle --exclude-dir=.vagrant'
+export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=.meteor --exclude=*.sw* --exclude-dir=bundle --exclude-dir=.vagrant --exclude=*.box'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
