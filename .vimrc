@@ -158,3 +158,5 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 " python-mode
 let g:pymode_python = 'python3'
+set completeopt-=preview
+
