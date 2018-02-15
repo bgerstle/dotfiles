@@ -155,6 +155,7 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_switch_buffer = 'etvh'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_mruf_relative = 1
 
 " python-mode
 let g:pymode_python = 'python3'
