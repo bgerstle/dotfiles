@@ -76,5 +76,10 @@ precmd() {
 # TODO: boxenize this
 export PATH=$PATH:~/Library/Android/sdk/platform-tools
 
+# Rust
 export PATH="$HOME/.cargo/bin:$PATH"
+rustup completions zsh > ~/.zfunc/_rustup
+fpath+=~/.zfunc
+
+source $HOME/.cargo/env
 export PATH="${HOME}/Code/lookback-ssh-agent:${PATH}"

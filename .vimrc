@@ -130,7 +130,7 @@ autocmd BufNewFile,BufRead inventory set filetype=dosini
 
 " Use local/dynamic vimtags
 set tags=.vimtags,;~/.vimtags
-let g:easytags_dynamic_files = 2
+let g:gutentags_ctags_tagfile='.vimtags'
 
 " Airline config
 let g:airline_theme='tomorrow'
@@ -150,6 +150,7 @@ let g:rustfmt_autosave = 1
 " Workaround for https://github.com/rust-lang/rust.vim/issues/118
 let g:syntastic_rust_checkers = ['cargo']
 
+
 " ctrlp
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_switch_buffer = 'etvh'
@@ -159,5 +160,16 @@ let g:ctrlp_mruf_relative = 1
 
 " python-mode
 let g:pymode_python = 'python3'
+" defer to syntastic
+let g:pymode_lint_on_write = 0
 set completeopt-=preview
+
+" vim-test key mappings
+nmap <silent> t<C-n> :TestNearest<CR> " t Ctrl+n
+nmap <silent> t<C-f> :TestFile<CR>    " t Ctrl+f
+nmap <silent> t<C-s> :TestSuite<CR>   " t Ctrl+s
+nmap <silent> t<C-l> :TestLast<CR>    " t Ctrl+l
+nmap <silent> t<C-g> :TestVisit<CR>   " t Ctrl+g
+let test#strategy = "dispatch"
+let g:test#preserve_screen = 1
 
