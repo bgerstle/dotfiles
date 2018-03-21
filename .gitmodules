@@ -88,3 +88,6 @@
 [submodule ".vim/bundle/vim-gutentags"]
 	path = .vim/bundle/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags
+[submodule ".vim/bundle/dash.vim"]
+	path = .vim/bundle/dash.vim
+	url = https://github.com/rizzatti/dash.vim

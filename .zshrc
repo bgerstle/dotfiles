@@ -58,7 +58,7 @@ export EDITOR='vim'
 # export ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future"
 
 # Grep flags
-export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=.meteor --exclude=*.sw* --exclude-dir=bundle --exclude-dir=.vagrant --exclude=*.box'
+export GREP_OPTIONS='--color=auto --exclude=*.pyc --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=.meteor --exclude=*.sw* --exclude-dir=bundle --exclude-dir=.vagrant --exclude=*.box --exclude=.vimtags'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
@@ -77,9 +77,8 @@ precmd() {
 export PATH=$PATH:~/Library/Android/sdk/platform-tools
 
 # Rust
-export PATH="$HOME/.cargo/bin:$PATH"
-rustup completions zsh > ~/.zfunc/_rustup
+source $HOME/.cargo/env
+rustup completions zsh > ~/._rustup
 fpath+=~/.zfunc
 
-source $HOME/.cargo/env
 export PATH="${HOME}/Code/lookback-ssh-agent:${PATH}"
