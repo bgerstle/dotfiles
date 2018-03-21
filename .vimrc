@@ -164,6 +164,9 @@ let g:pymode_python = 'python3'
 let g:pymode_lint_on_write = 0
 set completeopt-=preview
 
+" python checkers
+let g:syntastic_python_checkers = ['python', 'flake8', 'mypy', 'pycodestyle', 'pep8']
+
 " vim-test key mappings
 nmap <silent> t<C-n> :TestNearest<CR> " t Ctrl+n
 nmap <silent> t<C-f> :TestFile<CR>    " t Ctrl+f
