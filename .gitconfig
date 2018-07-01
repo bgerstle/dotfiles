@@ -4,6 +4,8 @@
   default = tracking
 [core]
   excludesfile = ~/.gitignore_global
+[pull]
+  rebase = true
 [apply]
   whitespace = fix
 [alias]
