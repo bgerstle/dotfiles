@@ -1788,6 +1788,11 @@
 	<false/>
 	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 224.000000, 263.000000, NO, NO</string>
+		<string>0.000000, 264.000000, 224.000000, 43.000000, NO, NO</string>
+	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -1821,15 +1826,15 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>755 785 606 456 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
-	<string>970 932 616 174 0 0 2560 1417 </string>
+	<string>972 932 616 174 0 0 2560 1417 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>315 253 606 469 0 0 1440 877 </string>
+	<string>738 588 606 469 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1230 306 796 473 0 0 2560 1417 </string>
+	<string>1060 486 796 473 0 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 399 1440 478 0 0 1440 877 </string>
+	<string>0 111 1440 766 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -3394,7 +3399,7 @@
 					<key>action</key>
 					<string>ScriptTrigger</string>
 					<key>parameter</key>
-					<string>open /Applications/1Password.app</string>
+					<string>open "/Applications/1Password 7.app"</string>
 					<key>partial</key>
 					<true/>
 					<key>regex</key>
@@ -4283,7 +4288,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-14T15:00:43Z</date>
+	<date>2018-07-13T14:38:20Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -4337,6 +4342,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.4.beta.1</string>
+	<string>3.1.6beta4</string>
 </dict>
 </plist>

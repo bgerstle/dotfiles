@@ -176,3 +176,5 @@ nmap <silent> t<C-g> :TestVisit<CR>   " t Ctrl+g
 let test#strategy = "dispatch"
 let g:test#preserve_screen = 1
 
+" Typescript
+let g:syntastic_typescript_checkers = ['tslint', 'tsc']
